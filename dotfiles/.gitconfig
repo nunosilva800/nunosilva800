@@ -1,0 +1,22 @@
+[user]
+	name = TODO
+	email = TODO
+	signingkey = TODO
+[credential]
+	helper = osxkeychain
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+[filter "strongbox"]
+	clean = strongbox -clean %f
+	smudge = strongbox -smudge %f
+	required = true
+[diff "strongbox"]
+	textconv = strongbox -diff
+[alias]
+	dm = "!git remote prune origin && git branch -vv | grep origin | grep gone | awk '{print $1}'| xargs -L 1 git branch -D"
+[core]
+	editor = vim
