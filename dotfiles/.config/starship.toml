@@ -1,0 +1,28 @@
+format = """
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$docker_context\
+$package\
+$ruby\
+$terraform\
+$aws\
+$env_var\
+$cmd_duration\
+$custom\
+$kubernetes\
+$line_break\
+$jobs\
+$time\
+$status\
+$character"""
+
+[aws]
+style = "yellow"
+disabled = true
+
+[kubernetes]
+format = 'on [🐹 $context \($namespace\)](green) '
+disabled = false
