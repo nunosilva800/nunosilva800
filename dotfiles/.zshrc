@@ -2,7 +2,7 @@ fpath=(~/.zsh/completions $fpath)
 autoload -U compinit && compinit
 
 # brew install zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # macos basics
 export CLICOLOR=1
