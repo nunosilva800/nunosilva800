@@ -1,21 +1,12 @@
 [user]
 	name = Nuno Silva
 	email = nunosilva800@gmail.com
-	signingkey = 99923A114D2C3577E08416888750BF286961CE08
-[credential]
-	helper = osxkeychain
 [commit]
 	gpgsign = true
 [gpg]
 	program = gpg
 [url "git@github.com:"]
         insteadOf = https://github.com/
-[filter "strongbox"]
-	clean = strongbox -clean %f
-	smudge = strongbox -smudge %f
-	required = true
-[diff "strongbox"]
-	textconv = strongbox -diff
 [alias]
 	dm = "!git remote prune origin && git branch -vv | grep origin | grep gone | awk '{print $1}'| xargs -L 1 git branch -D"
 [core]
