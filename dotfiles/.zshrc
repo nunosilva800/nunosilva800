@@ -31,14 +31,3 @@ alias gps='git push '
 alias gco='git checkout '
 alias gpoh='git push origin head -u '
 alias grom='git rebase origin/master '
-
-# brew bins to override macos defaults
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-
-# Go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-# boot https://starship.rs/
-eval "$(starship init zsh)"
